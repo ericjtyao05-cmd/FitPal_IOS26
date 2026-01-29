@@ -1,0 +1,32 @@
+# Xcode
+.DS_Store
+DerivedData/
+build/
+*.xcarchive
+*.xccheckout
+*.xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# SwiftPM
+.build/
+.swiftpm/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Logs
+*.log
+
+# Temporary
+.tmp/
+
+# Xcode generated
+.xcode-platforms/

@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		073525E14D4174511479A0A1 /* AnalysisPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F78397390AA8A53CD22F5D /* AnalysisPipeline.swift */; };
+		183C616385BCCBF03CC7544C /* Pods_FitPalApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B721926F4FD6A58F2028CBE1 /* Pods_FitPalApp.framework */; };
+		1AA21EF28C571C9B6BC3116B /* LiftType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E14A76C4506E027834C86F /* LiftType.swift */; };
+		1CFB5454E9A7BAF53AE9F7CC /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0048D82708D05A118EC3A1 /* Filters.swift */; };
+		47D073D6220257B6573CFE13 /* sample_deadlift_side.json in Resources */ = {isa = PBXBuildFile; fileRef = F7DAF5E4102EA30153F7DCEA /* sample_deadlift_side.json */; };
+		4AE62F34097D4B19BB40F84A /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199A9BA01E6FEC8477E9C6A /* CameraService.swift */; };
+		54BDF4F66A7655E2BA804686 /* sample_squat_side.json in Resources */ = {isa = PBXBuildFile; fileRef = F181FC59B94C9FAFDDAFC6D5 /* sample_squat_side.json */; };
+		5C2D0E6A8E5D4C89A5F3B2C1 /* pose_landmarker.task in Resources */ = {isa = PBXBuildFile; fileRef = 9B4F2A1D3C8E4B7D9A6C5E0F /* pose_landmarker.task */; };
+		6123D09759DF456453DCF004 /* LivePoseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5820B5FA6F3FFF7A4D381C47 /* LivePoseView.swift */; };
+		68410953C9650F4B990C86FE /* sample_bench_side.json in Resources */ = {isa = PBXBuildFile; fileRef = 1219B4A982741E088D8802C6 /* sample_bench_side.json */; };
+		6F1A2B3C4D5E6F708192A3B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7B6C5D4E3F2A1B0C9D8E7F /* Assets.xcassets */; };
+		7B948BA05330EDA47763E264 /* MetricsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5235EA77D2654CD96A0A7 /* MetricsCalculator.swift */; };
+		869ED644B499994DD3BD0196 /* RepSegmenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC5A7A6B6E898D2142ADB49 /* RepSegmenter.swift */; };
+		878E8979A132780B4F2CC9A2 /* AnalysisMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911DD4E4312D05AD05B1FEF4 /* AnalysisMode.swift */; };
+		9E2CA3DCF9B1D8EDC793DE63 /* RuleEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755BC3238A655004D8C95BA /* RuleEngine.swift */; };
+		A2EE28F9D1C7B5B0187780F0 /* Bundle+FitPal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FD8EB11CA3B5E07D4010B7 /* Bundle+FitPal.swift */; };
+		A35BD0D84774C1BE1FDBDE6E /* PoseDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578D67BDB71BBC8A51FBAE5 /* PoseDataLoader.swift */; };
+		A732F437BE0E68ED43B37C7F /* PLACE_POSE_LANDMARKER_TASK_HERE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D360EC94B38BF0F3D3FF1B76 /* PLACE_POSE_LANDMARKER_TASK_HERE.txt */; };
+		BE0F64F66A655C0BAA93F0A8 /* AnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1E212AB5F385DA2D25FAA /* AnalysisViewModel.swift */; };
+		BF788A743D2BF0F45AA432B5 /* Standards.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C46350C9F31EAEFADD270 /* Standards.swift */; };
+		C566B6550FBE95433AEF6BD0 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788EB0B752B687CE00E338F9 /* ReportView.swift */; };
+		C7ED09FFA9DF30A37F200BE7 /* LivePoseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3AE95E07AA127F18169B68 /* LivePoseViewModel.swift */; };
+		CD056A013CFB861BB52DDE27 /* MediaPipePoseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81DF2C1B06AF6C2B68DEE33 /* MediaPipePoseService.swift */; };
+		CE5F2675F83410EC1D9320AF /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138D2E27B2A3C44EC9F89C3 /* CameraPreview.swift */; };
+		D1CC1955D4A5818FEE91FB0C /* PoseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9110C75D05A3761C51E79D25 /* PoseTypes.swift */; };
+		D31AAE1C397A123749D6AE2A /* FitPalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFDA03DBB7BCA9D6C33E764 /* FitPalApp.swift */; };
+		D7E4DB9CE9842BEFD0320C15 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096775EF91DFCD019836ADE /* Report.swift */; };
+		FA7A23C91C9A3A7F43BC6126 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E9643AAA3980971A496B5B /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02F78397390AA8A53CD22F5D /* AnalysisPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisPipeline.swift; sourceTree = "<group>"; };
+		0C3516437467BB8EF54A6D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1219B4A982741E088D8802C6 /* sample_bench_side.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample_bench_side.json; sourceTree = "<group>"; };
+		4F0048D82708D05A118EC3A1 /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		5661749611C6450FB16E8FF7 /* Pods-FitPalApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitPalApp.release.xcconfig"; path = "Target Support Files/Pods-FitPalApp/Pods-FitPalApp.release.xcconfig"; sourceTree = "<group>"; };
+		5820B5FA6F3FFF7A4D381C47 /* LivePoseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePoseView.swift; sourceTree = "<group>"; };
+		6199A9BA01E6FEC8477E9C6A /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		6FD1E212AB5F385DA2D25FAA /* AnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewModel.swift; sourceTree = "<group>"; };
+		788EB0B752B687CE00E338F9 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		8096775EF91DFCD019836ADE /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		8A7B6C5D4E3F2A1B0C9D8E7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90E14A76C4506E027834C86F /* LiftType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftType.swift; sourceTree = "<group>"; };
+		90E9643AAA3980971A496B5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9110C75D05A3761C51E79D25 /* PoseTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseTypes.swift; sourceTree = "<group>"; };
+		911DD4E4312D05AD05B1FEF4 /* AnalysisMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisMode.swift; sourceTree = "<group>"; };
+		97ABC05F69B5F76EBEE26419 /* FitPalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitPalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4F2A1D3C8E4B7D9A6C5E0F /* pose_landmarker.task */ = {isa = PBXFileReference; lastKnownFileType = file; path = pose_landmarker.task; sourceTree = "<group>"; };
+		9E3AE95E07AA127F18169B68 /* LivePoseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePoseViewModel.swift; sourceTree = "<group>"; };
+		AFFDA03DBB7BCA9D6C33E764 /* FitPalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitPalApp.swift; sourceTree = "<group>"; };
+		B721926F4FD6A58F2028CBE1 /* Pods_FitPalApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitPalApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B755BC3238A655004D8C95BA /* RuleEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleEngine.swift; sourceTree = "<group>"; };
+		B81DF2C1B06AF6C2B68DEE33 /* MediaPipePoseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPipePoseService.swift; sourceTree = "<group>"; };
+		C3F5235EA77D2654CD96A0A7 /* MetricsCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsCalculator.swift; sourceTree = "<group>"; };
+		C578D67BDB71BBC8A51FBAE5 /* PoseDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseDataLoader.swift; sourceTree = "<group>"; };
+		D138D2E27B2A3C44EC9F89C3 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		D360EC94B38BF0F3D3FF1B76 /* PLACE_POSE_LANDMARKER_TASK_HERE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PLACE_POSE_LANDMARKER_TASK_HERE.txt; sourceTree = "<group>"; };
+		DBC5A7A6B6E898D2142ADB49 /* RepSegmenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepSegmenter.swift; sourceTree = "<group>"; };
+		DD3BD27C3E98497A3C77C5EC /* Pods-FitPalApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitPalApp.debug.xcconfig"; path = "Target Support Files/Pods-FitPalApp/Pods-FitPalApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DD3C46350C9F31EAEFADD270 /* Standards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standards.swift; sourceTree = "<group>"; };
+		E0FD8EB11CA3B5E07D4010B7 /* Bundle+FitPal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+FitPal.swift"; sourceTree = "<group>"; };
+		F181FC59B94C9FAFDDAFC6D5 /* sample_squat_side.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample_squat_side.json; sourceTree = "<group>"; };
+		F7DAF5E4102EA30153F7DCEA /* sample_deadlift_side.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample_deadlift_side.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		734B5F39927C67D95DA02700 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183C616385BCCBF03CC7544C /* Pods_FitPalApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03D567D958D8A62E78E92F83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97ABC05F69B5F76EBEE26419 /* FitPalApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05F58C7C8891A768E7EF9B32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D360EC94B38BF0F3D3FF1B76 /* PLACE_POSE_LANDMARKER_TASK_HERE.txt */,
+				9B4F2A1D3C8E4B7D9A6C5E0F /* pose_landmarker.task */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		17804CCA96A67D5EF7CBF70A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				911DD4E4312D05AD05B1FEF4 /* AnalysisMode.swift */,
+				90E14A76C4506E027834C86F /* LiftType.swift */,
+				9110C75D05A3761C51E79D25 /* PoseTypes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B7118F9961DB911F00401BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C3516437467BB8EF54A6D86 /* Info.plist */,
+				8A7B6C5D4E3F2A1B0C9D8E7F /* Assets.xcassets */,
+				1219B4A982741E088D8802C6 /* sample_bench_side.json */,
+				F7DAF5E4102EA30153F7DCEA /* sample_deadlift_side.json */,
+				F181FC59B94C9FAFDDAFC6D5 /* sample_squat_side.json */,
+				05F58C7C8891A768E7EF9B32 /* Models */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3EF13D8F29D2DCCAC73DA4F9 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				02F78397390AA8A53CD22F5D /* AnalysisPipeline.swift */,
+				C3F5235EA77D2654CD96A0A7 /* MetricsCalculator.swift */,
+				8096775EF91DFCD019836ADE /* Report.swift */,
+				DBC5A7A6B6E898D2142ADB49 /* RepSegmenter.swift */,
+				B755BC3238A655004D8C95BA /* RuleEngine.swift */,
+				DD3C46350C9F31EAEFADD270 /* Standards.swift */,
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
+		62BCEE52C72DE9F03DA6EA4F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6FD1E212AB5F385DA2D25FAA /* AnalysisViewModel.swift */,
+				6199A9BA01E6FEC8477E9C6A /* CameraService.swift */,
+				9E3AE95E07AA127F18169B68 /* LivePoseViewModel.swift */,
+				B81DF2C1B06AF6C2B68DEE33 /* MediaPipePoseService.swift */,
+				C578D67BDB71BBC8A51FBAE5 /* PoseDataLoader.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		86C8B5B31B3E1A8119C905E9 = {
+			isa = PBXGroup;
+			children = (
+				9A1058BA5B0C30B39E5BC45E /* FitPalApp */,
+				03D567D958D8A62E78E92F83 /* Products */,
+				CD37C90446CDD50C24F0384D /* Pods */,
+				BB5BAB74CBA308730931FFB8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9A1058BA5B0C30B39E5BC45E /* FitPalApp */ = {
+			isa = PBXGroup;
+			children = (
+				90E9643AAA3980971A496B5B /* ContentView.swift */,
+				AFFDA03DBB7BCA9D6C33E764 /* FitPalApp.swift */,
+				3EF13D8F29D2DCCAC73DA4F9 /* Analysis */,
+				17804CCA96A67D5EF7CBF70A /* Models */,
+				1B7118F9961DB911F00401BE /* Resources */,
+				62BCEE52C72DE9F03DA6EA4F /* Services */,
+				E16091D8623016AEABC1F01F /* Utils */,
+				ABE37A77C78303F303DDBD1F /* Views */,
+			);
+			name = FitPalApp;
+			path = Sources/FitPalApp;
+			sourceTree = "<group>";
+		};
+		ABE37A77C78303F303DDBD1F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D138D2E27B2A3C44EC9F89C3 /* CameraPreview.swift */,
+				5820B5FA6F3FFF7A4D381C47 /* LivePoseView.swift */,
+				788EB0B752B687CE00E338F9 /* ReportView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB5BAB74CBA308730931FFB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B721926F4FD6A58F2028CBE1 /* Pods_FitPalApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD37C90446CDD50C24F0384D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD3BD27C3E98497A3C77C5EC /* Pods-FitPalApp.debug.xcconfig */,
+				5661749611C6450FB16E8FF7 /* Pods-FitPalApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E16091D8623016AEABC1F01F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E0FD8EB11CA3B5E07D4010B7 /* Bundle+FitPal.swift */,
+				4F0048D82708D05A118EC3A1 /* Filters.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A9A1CD1587A4A37C168BFED /* FitPalApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98641786AE51CEED3C7F9975 /* Build configuration list for PBXNativeTarget "FitPalApp" */;
+			buildPhases = (
+				54957377946E62B39122003F /* [CP] Check Pods Manifest.lock */,
+				A3DF62C41DE7B64AC3E98F23 /* Sources */,
+				6634DF631A66B054C5F267E4 /* Resources */,
+				734B5F39927C67D95DA02700 /* Frameworks */,
+				42620B27C3B5E3475178A0A6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitPalApp;
+			productName = FitPalApp;
+			productReference = 97ABC05F69B5F76EBEE26419 /* FitPalApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F67A46E4E934FCDFFAC6F33D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2620;
+			};
+			buildConfigurationList = F1ED101E097450191A80FEEF /* Build configuration list for PBXProject "FitPalApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 86C8B5B31B3E1A8119C905E9;
+			minimizedProjectReferenceProxies = 1;
+			productRefGroup = 03D567D958D8A62E78E92F83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A9A1CD1587A4A37C168BFED /* FitPalApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6634DF631A66B054C5F267E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A732F437BE0E68ED43B37C7F /* PLACE_POSE_LANDMARKER_TASK_HERE.txt in Resources */,
+				6F1A2B3C4D5E6F708192A3B4 /* Assets.xcassets in Resources */,
+				5C2D0E6A8E5D4C89A5F3B2C1 /* pose_landmarker.task in Resources */,
+				68410953C9650F4B990C86FE /* sample_bench_side.json in Resources */,
+				47D073D6220257B6573CFE13 /* sample_deadlift_side.json in Resources */,
+				54BDF4F66A7655E2BA804686 /* sample_squat_side.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42620B27C3B5E3475178A0A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FitPalApp/Pods-FitPalApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FitPalApp/Pods-FitPalApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FitPalApp/Pods-FitPalApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54957377946E62B39122003F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitPalApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3DF62C41DE7B64AC3E98F23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				878E8979A132780B4F2CC9A2 /* AnalysisMode.swift in Sources */,
+				073525E14D4174511479A0A1 /* AnalysisPipeline.swift in Sources */,
+				BE0F64F66A655C0BAA93F0A8 /* AnalysisViewModel.swift in Sources */,
+				A2EE28F9D1C7B5B0187780F0 /* Bundle+FitPal.swift in Sources */,
+				CE5F2675F83410EC1D9320AF /* CameraPreview.swift in Sources */,
+				4AE62F34097D4B19BB40F84A /* CameraService.swift in Sources */,
+				FA7A23C91C9A3A7F43BC6126 /* ContentView.swift in Sources */,
+				1CFB5454E9A7BAF53AE9F7CC /* Filters.swift in Sources */,
+				D31AAE1C397A123749D6AE2A /* FitPalApp.swift in Sources */,
+				1AA21EF28C571C9B6BC3116B /* LiftType.swift in Sources */,
+				6123D09759DF456453DCF004 /* LivePoseView.swift in Sources */,
+				C7ED09FFA9DF30A37F200BE7 /* LivePoseViewModel.swift in Sources */,
+				CD056A013CFB861BB52DDE27 /* MediaPipePoseService.swift in Sources */,
+				7B948BA05330EDA47763E264 /* MetricsCalculator.swift in Sources */,
+				A35BD0D84774C1BE1FDBDE6E /* PoseDataLoader.swift in Sources */,
+				D1CC1955D4A5818FEE91FB0C /* PoseTypes.swift in Sources */,
+				869ED644B499994DD3BD0196 /* RepSegmenter.swift in Sources */,
+				D7E4DB9CE9842BEFD0320C15 /* Report.swift in Sources */,
+				C566B6550FBE95433AEF6BD0 /* ReportView.swift in Sources */,
+				9E2CA3DCF9B1D8EDC793DE63 /* RuleEngine.swift in Sources */,
+				BF788A743D2BF0F45AA432B5 /* Standards.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		356C2B23B5130CC53903D10A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fitpal.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		444B8A6DEC2579DB3C231519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD3BD27C3E98497A3C77C5EC /* Pods-FitPalApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Sources/FitPalApp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D43021CC0311352383ECDC7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5661749611C6450FB16E8FF7 /* Pods-FitPalApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Sources/FitPalApp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D6AC0C972F9E6FFEC7450E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fitpal.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98641786AE51CEED3C7F9975 /* Build configuration list for PBXNativeTarget "FitPalApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				444B8A6DEC2579DB3C231519 /* Debug */,
+				D43021CC0311352383ECDC7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F1ED101E097450191A80FEEF /* Build configuration list for PBXProject "FitPalApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6AC0C972F9E6FFEC7450E70 /* Debug */,
+				356C2B23B5130CC53903D10A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F67A46E4E934FCDFFAC6F33D /* Project object */;
+}

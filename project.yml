@@ -1,0 +1,19 @@
+name: FitPalApp
+options:
+  deploymentTarget:
+    iOS: "16.0"
+settings:
+  base:
+    PRODUCT_BUNDLE_IDENTIFIER: com.fitpal.demo
+    SWIFT_VERSION: 5.9
+
+targets:
+  FitPalApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources/FitPalApp
+    resources:
+      - path: Sources/FitPalApp/Resources
+    info:
+      path: Sources/FitPalApp/Resources/Info.plist

@@ -1,0 +1,2 @@
+Place the MediaPipe pose_landmarker.task file in this directory.
+The filename must be: pose_landmarker.task
