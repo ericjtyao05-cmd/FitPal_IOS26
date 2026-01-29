@@ -30,3 +30,7 @@ fastlane/test_output
 
 # Xcode generated
 .xcode-platforms/
+
+# Xcode user data
+xcuserdata/
+*.xcbkptlist
