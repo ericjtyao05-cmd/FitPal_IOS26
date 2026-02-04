@@ -5,5 +5,4 @@ project 'FitPalApp.xcodeproj'
 
 target 'FitPalApp' do
   pod 'MediaPipeTasksVision'
-  pod 'lottie-ios'
 end

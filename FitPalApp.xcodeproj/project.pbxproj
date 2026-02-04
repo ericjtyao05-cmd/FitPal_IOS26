@@ -222,7 +222,6 @@
 				A3DF62C41DE7B64AC3E98F23 /* Sources */,
 				6634DF631A66B054C5F267E4 /* Resources */,
 				734B5F39927C67D95DA02700 /* Frameworks */,
-				42620B27C3B5E3475178A0A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,23 +277,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		42620B27C3B5E3475178A0A6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FitPalApp/Pods-FitPalApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FitPalApp/Pods-FitPalApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FitPalApp/Pods-FitPalApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		54957377946E62B39122003F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
